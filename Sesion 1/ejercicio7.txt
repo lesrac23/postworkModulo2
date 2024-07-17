@@ -1,0 +1,14 @@
+/**
+ * Ejercicio 7: Cálculo de Descuento
+ * Crea variables para el precio de un producto y el porcentaje de descuento. 
+ * Calcula el precio final después del descuento. Muestra el precio original, el descuento y el precio final.
+ */
+fun main() {
+    var precio: Double = 100.0
+    var porcentajeDesc: Int = 15
+    var descuento: Double = (precio * porcentajeDesc) / 100
+    var precFinal: Double = precio - descuento
+    println("Precio original: $$precio")
+    println("Descuento: $$descuento")
+    println("Precio final: $$precFinal")   
+}

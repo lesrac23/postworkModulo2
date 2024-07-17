@@ -1,0 +1,18 @@
+/**
+ * Ejercicio 9: Operaciones Booleanas
+ * Crea tres variables booleanas y utiliza operadores lógicos (AND, OR, NOT) para combinarlas. 
+ * Muestra el resultado de al menos tres combinaciones diferentes.
+ */
+
+fun main() {
+    
+    var varBoolen1 : Boolean = true
+    var varBoolean2 : Boolean = false
+    var varBoolean3 : Boolean = true
+    
+    println("Resultado:")
+    println("$varBoolen1 AND $varBoolean2 = ${varBoolen1 && varBoolean2}")
+    println("$varBoolean2 OR $varBoolean3 = ${varBoolean2 || varBoolean3}")
+    println("NOT $varBoolen1 = ${!varBoolen1}")
+    println("($varBoolen1 OR $varBoolean2) AND $varBoolean3 = ${(varBoolen1 || varBoolean2) && varBoolean3}") 
+}

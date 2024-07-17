@@ -1,0 +1,18 @@
+/**Sesion 1: Ejercicios de Práctica en Kotlin
+ * Ejercicio 4: Operadores de Asignación Compuesta
+ * Declara una variable numérica y utiliza operadores de asignación compuesta para:
+ * Sumar 5 Multiplicar por 2 Restar 3 Dividir entre 4 Muestra el resultado después de cada operación.
+**/
+
+fun main() {
+ 
+    var numero = 35
+    numero += 5
+    println("Sumamos 5: $numero")
+    numero *= 2
+    println("Multiplicar por 2: $numero")
+    numero -= 3
+    println("Restar 3: $numero")
+    numero /= 4
+    println("Dividir entre 4: $numero ") 
+}

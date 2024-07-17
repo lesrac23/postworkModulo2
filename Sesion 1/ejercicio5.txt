@@ -1,0 +1,15 @@
+/**
+ * Ejercicio 5: Comparaciones
+ * Declara dos variables numéricas y utiliza operadores de comparación para:
+ * Verificar si son iguales, Verificar si la primera es mayor que la segunda 
+ * Verificar si la segunda es menor o igual que la primera Muestra el resultado de cada comparación.
+ */
+fun main() {
+    
+    var num1 = 15
+    var num2 = 45
+        
+    println("num1 es igual a num2? ${num1 ==  num2}")
+    println("num1 es mayor a num2? ${num1  >  num2}")
+    println("num2 es menor o igual a num1? ${num2 <= num1}") 
+}

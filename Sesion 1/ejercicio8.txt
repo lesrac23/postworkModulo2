@@ -1,0 +1,16 @@
+/**
+ * Ejercicio 8: Conversión de Tipos
+ * Declara una variable de tipo String que contenga un número. 
+ * Conviértela a Int y luego a Double. 
+ * Realiza una operación aritmética con cada tipo y muestra los resultados.
+ */
+
+fun main() {
+    
+   var str1: String = "10"
+   var convInt: Int = str1.toInt()
+   var convDouble: Double = convInt.toDouble()
+   println("EL string: $str1")
+   println("$convInt (Int) + 20 = ${convInt + 10}")
+   println("$convDouble (Double) + 22.5 = ${convDouble + 22.5}")
+}

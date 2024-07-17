@@ -1,0 +1,15 @@
+/**Sesion 1: Ejercicios de Práctica en Kotlin
+ * Ejercicio 2: Operaciones Aritméticas
+ * Crea dos variables numéricas y realiza las siguientes operaciones:
+ * Suma Resta Multiplicación División Módulo Imprime el resultado de cada operación.
+ */
+
+fun main(){
+   val num1: Int = 50
+   val num2: Int = 34
+   println("Suma: ${num1 + num2}")
+   println("Resta: ${num1 - num2}")
+   println("Multiplicación: ${num1 * num2}")
+   println("División: ${num1 / num2}")
+   println("Módulo: ${num1 % num2}")
+}

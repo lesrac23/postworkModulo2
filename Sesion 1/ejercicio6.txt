@@ -1,0 +1,15 @@
+/**
+ * Ejercicio 6: Operaciones con Strings
+ * Declara dos variables de tipo String y:
+ * Concaténalas usando el operador + Compara si son iguales 
+ * Obtén la longitud de ambas y suma los resultados Muestra los resultados.
+ */
+fun main() {
+    var str1: String = "Hola"
+    var str2: String = "Bedu"
+    println("La variables concatenadas es: ${str1 + " " + str2}")
+    println("$str1 es igual a $str2? ${str1 == str2}")
+    println("La longitud de la cadena $str1 es: ${str1.length} y la longitud de $str2 es: ${str2.length}")
+    println("La suma de la longitud de ambas cadenas son: ${str1.length + str2.length}")
+    
+}

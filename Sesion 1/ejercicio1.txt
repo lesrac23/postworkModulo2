@@ -1,0 +1,18 @@
+/**Sesion 1: Ejercicios de Práctica en Kotlin
+ * Ejercicio 1: Declaración de Variables
+ * Declara variables para representar la información de un producto:
+ * Nombre del producto (String)
+ * Precio (Double)
+ * Disponible en inventario (Boolean)
+ * Código de producto (String) Imprime todas las variables.
+ */
+
+fun main(){
+    val producto: String = "Vestido"
+    val precio: Double = 125.6
+    val disponible: Boolean = true
+    val codigoProducto: String = "Producto: $producto, Precio: $precio, Disponible en Inventario: $disponible"
+    
+    println(codigoProducto)
+    
+}

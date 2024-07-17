@@ -1,0 +1,11 @@
+/**Sesion 1: Ejercicios de Práctica en Kotlin
+ * Ejercicio 3: Incremento y Decremento
+ * Declara una variable numérica y:
+ * Incrementa su valor en 1 y muestra el resultado Decrementa su valor en 1 y muestra el resultado
+**/
+
+fun main() {
+    var y = 5
+    println("Incremento ${++y}")
+    println("Decremento ${--y}")
+}
