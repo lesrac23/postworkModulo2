@@ -1,3 +1,2 @@
 # EJERCICIOS DEL MODULO 2 
-## Enlaces
-[Sesion 01](Sesion 1)&nbsp;
+##Contiene los ejercicios de los Postwork del Módulo 2, ademas de ejercicios realizados en clase
