@@ -1,0 +1,29 @@
+/**Ejercicios de Kotlin: Funciones, Condicionales, Ciclos y Estructuras de Datos
+ * Ejercicio 7: Diccionario de sinónimos
+ * Crea un mapa de sinónimos y una función para obtener sinónimos de una palabra.
+ */
+fun main() {
+    val palabra = "inteligente"
+    val sinonimosPalabra = obtenerSinonimos(palabra)
+    
+    if (sinonimosPalabra != null) {
+        println("Sinónimos de $palabra es: ${sinonimosPalabra.joinToString(", ")}")
+    } else {
+        println("No se encontraron sinónimos para la palabra $palabra.")
+    }
+}
+
+
+
+// Función para obtener sinónimos de una palabra
+fun obtenerSinonimos(palabra: String): List<String>? {
+    // Definimos el mapa de sinónimos
+    val sinonimos: Map<String, List<String>> = mapOf(
+            "feliz" to listOf("contento", "alegre","gozoso" ),
+            "rápido" to listOf("veloz", "ágil", "apresurado"),
+            "inteligente" to listOf("listo", "ingenioso", "brillante"),
+            "triste" to listOf("deprimido", "afligido", "melancólico")
+        )
+
+    return sinonimos[palabra]
+}

@@ -1,0 +1,24 @@
+/**Ejercicios de Kotlin: Funciones, Condicionales, Ciclos y Estructuras de Datos
+ * Ejercicio 2: Verificador de número primo
+ * Implementa una función que determine si un número es primo.
+ */
+
+
+fun numPrimo(num: Int): Boolean {
+    if (num <= 1) {
+        return false
+    }
+    //Recorre desde 2 hasta la raíz cuadrada del número, verificando si el número es divisible por algún valor en ese rango
+    for (i in 2..Math.sqrt(num.toDouble()).toInt()) {
+        if (num % i == 0){
+            return false
+        } 
+    }
+    
+    return true
+}
+
+fun main() {
+    println("¿Es 54 primo? ${numPrimo(54)}")
+    println("¿Es 89 primo? ${numPrimo(89)}")
+}

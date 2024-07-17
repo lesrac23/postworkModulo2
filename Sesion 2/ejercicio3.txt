@@ -1,0 +1,17 @@
+/**Ejercicios de Kotlin: Funciones, Condicionales, Ciclos y Estructuras de Datos
+ * Ejercicio 3: Validador de email con función local
+ * Desarrolla una función que valide una dirección de email utilizando una función local.
+ */
+
+fun main() {
+    println("¿El correo bedu@gmail.com es valido? ${validarEmail("bedu@gmail.com")}")
+    println("¿El correo bedugmailcom es valido? ${validarEmail("bedugmailcom")}")
+}
+
+fun validarEmail(email: String): Boolean {
+  fun caracteresEmail(str: String): Boolean {
+        return str.contains("@") && str.contains(".")
+    }
+
+    return email.isNotEmpty() && caracteresEmail(email)
+}

@@ -1,0 +1,29 @@
+/**5. Companion Object
+ * Ejercicio 5 Crea una clase Contador con un companion object que mantenga un contador global de instancias creadas. 
+ * Cada vez que se cree una nueva instancia de Contador, el contador global debe incrementarse.
+ */
+
+class Contador {
+    companion object {
+        private var contadorGlobal = 0
+        
+        fun obtContadorGlobal(): Int {
+            return contadorGlobal
+        }
+    }
+    
+    init {
+        contadorGlobal++
+    }
+}
+
+fun main() {
+    println(Contador.obtContadorGlobal()) 
+    
+    val contador1 = Contador()
+    println(Contador.obtContadorGlobal()) 
+    
+    val contador2 = Contador()
+    val contador3 = Contador()
+    println(Contador.obtContadorGlobal()) 
+}

@@ -1,0 +1,21 @@
+/**Ejercicios de Kotlin: Funciones, Condicionales, Ciclos y Estructuras de Datos
+ * Ejercicio 6: Contar vocales en una lista de palabras Usa una lista y un ciclo para contar las vocales en una lista de palabras.
+ */
+fun contarVocales(palabras: List<String>): Int{
+    val vocales = listOf('a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U')
+    var contadorVocales = 0
+    for (palabra in palabras){
+        for (caracter in palabra){
+            if(caracter in vocales){
+                contadorVocales++
+            }
+        }
+    }
+    return contadorVocales
+}
+
+fun main(){
+    val listaDePalabras = listOf("HOlA", "estoy", "aprendiendo", "lenguaje", "Kotlin")
+    val totalVocales = contarVocales(listaDePalabras)
+    println("El total de vocales en la lista de palabras es: $totalVocales")
+}

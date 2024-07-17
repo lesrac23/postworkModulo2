@@ -1,0 +1,19 @@
+/**Ejercicios de Kotlin: Funciones, Condicionales, Ciclos y Estructuras de Datos
+ * Ejercicio 4: Clasificador de edades usando when
+ * Crea una función que clasifique a una persona según su edad utilizando when.
+ */
+
+fun main(){
+    clasifiqueEdad(25)
+}
+
+fun clasifiqueEdad(edad: Int) {
+    when(edad){
+        0, 1     -> print("Es un bebe")
+        in 2..11 -> print("Es un niño")
+        in 12..18 ->print("Es un adolecente")
+        in 19..26 -> print("Es un joven")
+        in 27..59 -> print("Es un adulto")
+        else -> print("Es un adulto mayor")  
+    }
+}

@@ -1,0 +1,16 @@
+/**Ejercicios de Kotlin: Funciones, Condicionales, Ciclos y Estructuras de Datos
+ * Ejercicio 1: Calculadora de volumen de cilindro
+ * Crea una función que calcule el volumen de un cilindro dado su radio y altura.
+ */
+
+import kotlin.math.PI
+
+fun main(){
+    println("El volumen del cilindro: ${calcularVolumenCilindro(5.0, 10.0)}")
+    
+}
+
+fun calcularVolumenCilindro(altura:Double, radio:Double): Double {
+    val volumen = PI * altura * radio * radio
+    return volumen
+}

@@ -1,0 +1,16 @@
+/**Ejercicios de Kotlin: Clases, Objetos y Constructores
+ * Ejercicio 1: Clase Libro
+ * Crea una clase Libro con los atributos titulo, autor y añoPublicacion. 
+ * Incluye un constructor primario y un método para imprimir la información del libro.
+ */
+class Libro(val titulo: String, val autor:String, val añoPublicacion: Int){
+    fun imprimir(){
+        println("Titulo:'$titulo' por $autor ($añoPublicacion)")
+    } 
+}
+
+fun main(){
+    val miLibro = Libro("1984", "George Orwell",1949)
+    miLibro.imprimir()
+    
+}

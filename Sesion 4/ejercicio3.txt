@@ -1,0 +1,32 @@
+/**3. Interfaces
+ * Ejercicio3 Crea una interfaz Volador con un método volar(). 
+ * Luego, implementa esta interfaz en las clases Ave y Avion. 
+ * Crea una función que reciba un Volador y llame a su método volar().
+ */
+interface Volador{
+    fun volar()
+}
+
+class Ave: Volador{
+    override fun volar() {
+      println("El ave esta volando")  
+    } 
+}
+
+class Avion: Volador{
+    override fun volar(){
+        println("El avion esta volando")
+    } 
+}
+
+fun realizarVuelo(volador: Volador){
+    volador.volar()
+}
+
+
+fun main(){
+    val ave = Ave()
+    val avion = Avion()
+    realizarVuelo(ave)
+    realizarVuelo(avion)
+}

@@ -1,0 +1,39 @@
+/**6. Herencia Múltiple con Interfaces
+ * Ejercicio 6 Crea dos interfaces Nadador y Corredor con métodos nadar() y correr() respectivamente. 
+ * Luego, crea una clase Triatleta que implemente ambas interfaces. Finalmente, 
+ * crea una función que reciba un objeto y verifique si puede nadar, correr o ambos.
+ */
+
+interface Nadador{
+    fun nadar()
+}
+
+interface Corredor{
+    fun correr()
+}
+
+class Triatleta:Nadador, Corredor{
+    override fun nadar(){
+        println("El triatleta esta nadando")
+    }
+    override fun correr(){
+        println("El triatleta esta corriendo")
+    }    
+}
+
+fun verifiHabilidades(obj: Any){
+    if (obj is Nadador) {
+        obj.nadar()
+    }
+    if (obj is Corredor) {
+        obj.correr()
+    }
+}
+
+fun main() {
+    val triatleta = Triatleta()
+    verifiHabilidades(triatleta)
+}
+
+
+

@@ -1,0 +1,23 @@
+/**
+ * Ejercicio 5: Clase con Propiedades Lazy
+ * Crea una clase Calculadora con una propiedad pi que se inicialice de manera perezosa (lazy) 
+ * y un método para calcular el área de un círculo.
+ */
+class Calculadora {
+    val pi: Double by lazy {//esta es una propiedad inmutable
+        println("Calculando pi...")
+        3.14159265359
+    }
+
+    fun areaCirculo(radio: Double): Double {
+        return pi * radio * radio
+    }
+}
+
+fun main() {
+    val calc = Calculadora()
+    println("Área de un círculo con radio 15: ${calc.areaCirculo(15.0)}")
+    println("Área de un círculo con radio 12: ${calc.areaCirculo(12.0)}")
+}
+
+ 

@@ -1,0 +1,20 @@
+/**Ejercicios de Kotlin: Clases, Objetos y Constructores
+ * Ejercicio 3: Clase con Constructor Secundario
+ * Crea una clase Rectangulo con atributos ancho y alto. 
+ * Incluye un constructor primario y un constructor secundario que inicialice ambos valores con el mismo número.
+ */
+
+class Rectangulo(val ancho: Double, val alto: Double){
+    constructor(lado: Double): this(lado, lado)
+    
+    fun calcArea() = ancho * alto
+    
+}
+
+fun main(){
+    val rectangulo = Rectangulo(20.8,45.4)
+    val cuadrado = Rectangulo(4.0)
+
+    println("Área del rectángulo: ${rectangulo.calcArea()}")
+    println("Área del cuadrado: ${cuadrado.calcArea()}")
+   }

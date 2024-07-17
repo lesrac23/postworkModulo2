@@ -1,0 +1,18 @@
+/**Ejercicios de Kotlin: Funciones, Condicionales, Ciclos y Estructuras de Datos
+ * Ejercicio 5: Imprimir números pares en un rango
+ * Utiliza un ciclo for para imprimir los números pares en un rango dado.
+ */
+fun imprimirNumPares(inicio: Int, fin:Int){
+    for(numero in inicio..fin){
+        if(numero % 2 == 0){
+            println(numero)
+        }
+    }
+}
+
+fun main(){
+    val inicio = 1
+    val fin = 20
+    println("Números pares entre $inicio y $fin:")
+    imprimirNumPares(inicio, fin)
+}

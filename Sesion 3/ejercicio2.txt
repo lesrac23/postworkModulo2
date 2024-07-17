@@ -1,0 +1,32 @@
+/**Ejercicios de Kotlin: Clases, Objetos y Constructores
+ * Ejercicio 2: Clase Cuenta Bancaria
+ * Diseña una clase CuentaBancaria con un atributo privado saldo.Incluye métodos para depositar, retirar y consultar saldo.
+ */
+class CuentaBancaria(saldoInicial: Double){
+    private var saldo = saldoInicial
+    
+    fun depositar(monto: Double){
+        saldo += monto
+        println("Deposito de $monto realizado. Nuevo saldo: $saldo")
+    }
+    
+    fun retirar(monto: Double){
+        if(monto <= saldo){
+            saldo -= monto
+            println("Retiro de $monto realizado. Nuevo saldo: $saldo")
+        }else{
+            println("Saldo insuficiente")
+        }
+        
+    }
+    
+    fun consultaSaldo() = println("Tu saldo es: $saldo")
+    
+}
+
+fun main(){
+   val cuenta = CuentaBancaria(1000.50)
+   cuenta.depositar(5000.0)
+   cuenta.retirar(100.0)
+   cuenta.consultaSaldo()
+}

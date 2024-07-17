@@ -1,0 +1,26 @@
+/**Herencia y Polimorfismo
+ * Ejercicio1: Crea una clase base Animal con un método hacerSonido(). 
+ * Luego, crea dos clases derivadas Perro y Gato que hereden de Animal y sobrescriban el método hacerSonido(). 
+ * Finalmente, crea una función que reciba un Animal y llame a su método hacerSonido(). 
+ */
+open class Animal{
+    open fun sonido():String = ""
+}
+
+class Perro(): Animal(){
+    override fun sonido():String = "El perro hace: guau"
+}
+class Gato():Animal(){
+    override fun sonido():String = "El gato hace: miau"
+}
+fun hacerSonido(animal:Animal){
+    println("${animal.sonido()}") 
+}
+
+fun main(){
+    val perro = Perro()
+    val gato = Gato()
+    hacerSonido(perro)
+    hacerSonido(gato)
+}
+
