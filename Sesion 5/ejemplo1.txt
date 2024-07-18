@@ -1,0 +1,14 @@
+/**Funcion de orden superior: dentro puede recibir de los parametros pueden recibir una funcion y pueden debolver funcion como resultado
+ * Ejemplo 1
+ */
+
+fun operarConNumeros(a: Int, b: Int, operacion:(Int, Int) -> Int): Int{//(Int, Int) -> Int es como si tuviera Int
+    return operacion(a,b)
+}
+fun main(){
+val resultadoSuma = operarConNumeros(5,3){x,y -> x + y}
+println(resultadoSuma)
+
+val resultadoMultiplicacion = operarConNumeros(5,3) {x,y -> x*y}
+println(resultadoMultiplicacion)
+}

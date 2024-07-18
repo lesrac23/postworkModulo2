@@ -1,0 +1,9 @@
+/**
+ * Ejercicio1 l: Crea una función literal que calcule el cuadrado de un número y úsala para calcular el cuadrado de 5.
+ */
+
+val cuadrado = {x: Int -> x * x}
+
+fun main(){
+    println("El cuadrado del número 5 es: ${cuadrado(5)}")
+}

@@ -1,0 +1,8 @@
+/**Ejemplo2
+ */
+val numeros = listOf(1,2,3,4,5)
+val pares = numeros.filter{it % 2 == 0}//funcion literal anonima o lamba con las {} it es lo que contiene filter operador funcional
+fun main(){
+    println(pares)
+    
+}

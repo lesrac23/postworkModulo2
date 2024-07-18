@@ -1,0 +1,12 @@
+/**
+ * Ejemplo4 partition:
+ * 
+ */
+
+
+fun main(){
+	val calificaciones = listOf(10,6,4,5,7,9,10,6,7,9)
+    val (notasAprobadas, notasReprobadas) = calificaciones.partition{it>=6}
+    println("Notas aprobadas: $notasAprobadas")
+    println("Notas reprobadas: $notasReprobadas")
+}

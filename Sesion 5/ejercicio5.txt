@@ -1,0 +1,12 @@
+/**
+ * Ejercicio 5 partition: Vamos a trabajar con una lista de números y usaremos partition para separar los números pares de los impares.
+ * 
+ */
+
+
+fun main(){
+	val numeros = listOf(10,6,8,3,1,4,5,7,9,10,6,7,9)
+    val (numerosPares, numerosImpares) = numeros.partition{it % 2 == 0}
+    println("Numeros Pares: $numerosPares")
+    println("Numeros Impares: $numerosImpares")
+}

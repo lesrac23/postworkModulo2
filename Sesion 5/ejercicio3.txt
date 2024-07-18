@@ -1,0 +1,16 @@
+/**
+ * Ejercicio 3: Función de orden superior personalizada: Crea una función de orden superior llamada aplicarOperacion 
+ * que tome dos números y una función, y aplique esa función a los números.
+ */
+
+
+fun aplicarOperacion(num1: Int, num2: Int, operacion:(Int, Int) -> Int):Int{
+    return operacion(num1, num2)
+}
+
+ val suma = aplicarOperacion(5,3){x, y -> x + y}
+
+fun main(){
+    println("Suma es: $suma")
+   
+}

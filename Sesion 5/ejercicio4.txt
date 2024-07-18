@@ -1,0 +1,17 @@
+/**
+ * Ejercicio 4:
+ * Crea una función de orden superior llamada transformarLista que tome una lista de números enteros 
+ * y una función de transformación. 
+ * La función debe aplicar la transformación a cada elemento de la lista y devolver una nueva lista con los resultados.
+ */
+fun main(){
+    
+fun transformarLista(lista: List<Int>, transformacion:(Int) -> Int):List<Int>{
+    return lista.map {transformacion(it)}
+}
+
+val nuevaLista = listOf(1, 2, 3, 4, 5, 6, 7, 8, 9, 10)
+val listaDouble = transformarLista(nuevaLista){it * 2}
+println("Lista Multiplicada por 2: $listaDouble" )
+
+}

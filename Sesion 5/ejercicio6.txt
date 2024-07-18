@@ -1,0 +1,11 @@
+/**
+ * Ejercicio 6 map: 
+ * 
+ */
+
+fun main(){
+	val preciosLibros = setOf(1024.0, 248.0, 8224.33)
+    val preciosFinales = preciosLibros.map{it * 1.16}
+    println("Precios con IVA: $preciosFinales")
+    
+}

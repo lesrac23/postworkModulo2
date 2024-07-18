@@ -1,0 +1,17 @@
+/**
+ * Ejercicio 7 map:
+ * Ejercicio: Crea una función que tome una lista de temperaturas en Celsius y las convierta a Fahrenheit.
+ * Luego, en la función main, crea una lista de temperaturas en Celsius, aplica la conversión, e imprime los resultados. 
+ * 
+ */
+
+fun celsiusFarenheit(temperaturas: List<Double>): List<Double>{
+    return temperaturas.map{it * 9/5 + 32}
+}
+
+fun main(){
+	val tempC = listOf(10.0, 20.4, 45.6, 56.8, 79.4, 100.3)
+    val tempF = celsiusFarenheit(tempC)
+    println("Temperatura en Farenheit: $tempF")
+    
+}
